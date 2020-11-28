@@ -5,19 +5,19 @@
  */
 function filterSearch() {
     // Declare variables
-    var inputName = document.getElementById("myInputName");     // Get input of Name seraches
-    var inputGen = document.getElementById("myInputGenerator")  // Get input of Generator searches
+    var inputName = document.getElementById("p1InputName");     // Get input of Name seraches
+    var inputGen = document.getElementById("p1InputGenerator")  // Get input of Generator searches
     var filterName = inputName.value.toUpperCase();             // Non-case-specific searching of names
     var filterGen = inputGen.value.toUpperCase();               // Non-case-specific searching of generators
-    var table = document.getElementById("myTable");             // Get table
-    var tr = table.getElementsByTagName("tr");                  // Get all table rows
+    var table = document.getElementById("p1Table");             // Get table
+    var tr = table.getElementsByClassName("p1tr");                  // Get all table rows
   
     // Loop through all table rows, and hide those who don't match the search query
     for (i = 0; i < tr.length; i++) {
         console.log(i)
         // Get column values
-        td = tr[i].getElementsByTagName("td")[0];
-        tdg = tr[i].getElementsByTagName("td")[1];
+        td = tr[i].getElementsByClassName("p1td")[0];
+        tdg = tr[i].getElementsByClassName("p1td")[1];
         if (td || tdg) {                                            // Check if not empty
             txtName = td.textContent || td.innerText;               // Get text from input
             txtGen = tdg.textContent || tdg.innerText;              // Get text from input
