@@ -69,3 +69,14 @@
     /* Add a grey background color to the table header and on hover */
     background-color: #f1f1f1;
 }
+
+/*
+   Problem 3 - Color Generation
+ */
+#problem3 {
+    min-height: 20vh;
+}
+
+/*
+   Problem 4 - Text alternating
+ */
