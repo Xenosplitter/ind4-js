@@ -63,37 +63,37 @@
                 <p>Integrate a filter table into your website</p>
 
                 <p>For this table, all names were populated from entries in the <a href="https://www.fantasynamegenerators.com/">Fantasy Name Generator</a>.</p>
-                <input type="text" id="myInputName" onkeyup="filterSearch()" placeholder="Search by names..">
-                <input type="text" id="myInputGenerator" onkeyup="filterSearch()" placeholder="Search by generator...">
+                <input type="text" id="p1InputName" onkeyup="filterSearch()" placeholder="Search by names..">
+                <input type="text" id="p1InputGenerator" onkeyup="filterSearch()" placeholder="Search by generator...">
 
-                <table id="myTable">
-                    <tr class="header">
+                <table id="p1Table">
+                    <tr class="header p1tr">
                         <th id="table-name-col">Name</th>
                         <th id="table-generator-col">Generator Used</th>
                     </tr>
-                    <tr>
-                        <td>Thabrear Whitpike</td>
-                        <td>Dwarf Names</td>
+                    <tr class="p1tr">
+                        <td class="p1td">Thabrear Whitpike</td>
+                        <td class="p1td">Dwarf Names</td>
                     </tr>
-                    <tr>
-                        <td>Ekstasis</td>
-                        <td>Titan Names</td>
+                    <tr class="p1tr">
+                        <td class="p1td">Ekstasis</td>
+                        <td class="p1td">Titan Names</td>
                     </tr>
-                    <tr>
-                        <td>Jonmic Whitpike</td>
-                        <td>Dwarf Names</td>
+                    <tr class="p1tr">
+                        <td class="p1td">Jonmic Whitpike</td>
+                        <td class="p1td">Dwarf Names</td>
                     </tr>
-                    <tr>
-                        <td>Vuduin Keltoris</td>
-                        <td>Elf Names</td>
+                    <tr class="p1tr">
+                        <td class="p1td">Vuduin Keltoris</td>
+                        <td class="p1td">Elf Names</td>
                     </tr>
-                    <tr>
-                        <td>Emhrul</td>
-                        <td>Selkie Names</td>
+                    <tr class="p1tr">
+                        <td class="p1td">Emhrul</td>
+                        <td class="p1td">Selkie Names</td>
                     </tr>
-                    <tr>
-                        <td>Halis</td>
-                        <td>Titan Name</td>
+                    <tr class="p1tr">
+                        <td class="p1td">Halis</td>
+                        <td class="p1td">Titan Name</td>
                     </tr>
                 </table> 
             </div>
@@ -101,6 +101,40 @@
             <div class="col-lg-6" id="problem2">
                 <h4>Problem #2</h4>
                 <p>Integrate list sorting into your website</p>
+
+                <p>This table uses the same content as problem #1</p>
+                <button class="btn btn-secondary" onclick="sortTable()">Sort list by generator</button>
+
+                <table id="p2Table">
+                    <tr class="header p2tr">
+                        <th id="table-name-col">Name</th>
+                        <th id="table-generator-col">Generator Used</th>
+                    </tr>
+                    <tr class="p2tr">
+                        <td class="p2td">Thabrear Whitpike</td>
+                        <td class="p2td">Dwarf Names</td>
+                    </tr>
+                    <tr class="p2tr">
+                        <td class="p2td">Ekstasis</td>
+                        <td class="p2td">Titan Names</td>
+                    </tr>
+                    <tr class="p2tr">
+                        <td class="p2td">Jonmic Whitpike</td>
+                        <td class="p2td">Dwarf Names</td>
+                    </tr>
+                    <tr class="p2tr">
+                        <td class="p2td">Vuduin Keltoris</td>
+                        <td class="p2td">Elf Names</td>
+                    </tr>
+                    <tr class="p2tr">
+                        <td class="p2td">Emhrul</td>
+                        <td class="p2td">Selkie Names</td>
+                    </tr>
+                    <tr class="p2tr">
+                        <td class="p2td">Halis</td>
+                        <td class="p2td">Titan Name</td>
+                    </tr>
+                </table> 
             </div>
         </div>
 

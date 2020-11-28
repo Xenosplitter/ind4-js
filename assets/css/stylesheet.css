@@ -1,9 +1,16 @@
 /*
+   Generic styles
+ */
+.row {
+    margin-bottom: 25px;
+}
+
+/*
    Problem 1 - Filter Table
    Styles from w3schools
    https://www.w3schools.com/howto/howto_js_filter_table.asp
  */
-#myInput {
+ #p1Input {
     background-image: url('/css/searchicon.png');   /* Add a search icon to input */
     background-position: 10px 12px;                 /* Position the search icon */
     background-repeat: no-repeat;                   /* Do not repeat the icon image */
@@ -14,24 +21,51 @@
     margin-bottom: 12px;                            /* Add some space below the input */
 }
 
-#myTable {
+#p1Table {
     border-collapse: collapse;  /* Collapse borders */
     width: 100%;                /* Full-width */
     border: 1px solid #ddd;   /* Add a grey border */
     font-size: 18px;            /* Increase font-size */
 }
 
-#myTable th, #myTable td {
+#p1Table .p1th, #p1Table .p1td {
     text-align: left; /* Left-align text */
     padding: 12px;    /* Add padding */
 }
 
-#myTable tr {
+#p1Table .p1tr {
     /* Add a bottom border to all table rows */
     border-bottom: 1px solid #ddd;
 }
 
-#myTable tr.header, #myTable tr:hover {
+#p1Table .p1tr.header, #p1Table .p1tr:hover {
+    /* Add a grey background color to the table header and on hover */
+    background-color: #f1f1f1;
+}
+
+/*
+   Problem 2 - List Sorting
+   Styles from w3schools
+   https://www.w3schools.com/howto/howto_js_filter_table.asp
+ */
+#p2Table {
+    border-collapse: collapse;  /* Collapse borders */
+    width: 100%;                /* Full-width */
+    border: 1px solid #ddd;   /* Add a grey border */
+    font-size: 18px;            /* Increase font-size */
+}
+
+#p2Table .p2th, #p2Table .p2td {
+    text-align: left; /* Left-align text */
+    padding: 12px;    /* Add padding */
+}
+
+#p2Table .p2tr {
+    /* Add a bottom border to all table rows */
+    border-bottom: 1px solid #ddd;
+}
+
+#p2Table .p2tr.header, #p2Table .p2tr:hover {
     /* Add a grey background color to the table header and on hover */
     background-color: #f1f1f1;
 }
