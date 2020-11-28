@@ -15,24 +15,21 @@ function filterSearch() {
     // Loop through all table rows, and hide those who don't match the search query
     for (i = 0; i < tr.length; i++) {
         console.log(i)
-        // Check name matches
+        // Get column values
         td = tr[i].getElementsByTagName("td")[0];
         tdg = tr[i].getElementsByTagName("td")[1];
-        if (td || tdg) {
-            txtName = td.textContent || td.innerText;
-            txtGen = tdg.textContent || tdg.innerText;
-            console.log(txtName, txtName.toUpperCase().indexOf(filterName));
-            console.log(txtGen, txtGen.toUpperCase().indexOf(filterGen));
-            console.log(filterName,filterGen);
-            if (txtName.toUpperCase().indexOf(filterName) > -1) {
-                if(txtGen.toUpperCase().indexOf(filterGen) > -1) {
-                    tr[i].style.display = "";
+        if (td || tdg) {                                            // Check if not empty
+            txtName = td.textContent || td.innerText;               // Get text from input
+            txtGen = tdg.textContent || tdg.innerText;              // Get text from input
+            if (txtName.toUpperCase().indexOf(filterName) > -1) {   // Find matching names
+                if(txtGen.toUpperCase().indexOf(filterGen) > -1) {  // Find matching gens
+                    tr[i].style.display = "";                       // Show row
                 }
-                else {
-                    tr[i].style.display = "none";
+                else {                                              // If no generator matches
+                    tr[i].style.display = "none";                   // Hide row
                 }
-            } else {
-            tr[i].style.display = "none";
+            } else {                                                // If no name matches
+            tr[i].style.display = "none";                           // Hide row
             }
         }
     }
